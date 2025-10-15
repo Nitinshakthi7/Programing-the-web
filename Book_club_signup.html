@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <title>Book Club Signup</title>
+    <!-- The <title> shows the page name in the browser tab -->
+</head>
+<body>
+
+    <h1>Join Our Book Club!</h1>
+    <!-- <h1> is a heading for the page -->
+
+    <form action="#" method="post">
+        <!-- <form> is where users enter information to submit -->
+        <!-- action="#" means form won't go anywhere yet -->
+        <!-- method="post" sends the data securely -->
+
+        <p>
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName">
+            <!-- <input type="text"> is a box to type text -->
+        </p>
+
+        <p>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email">
+            <!-- <input type="email"> ensures user types a valid email -->
+        </p>
+
+        <fieldset>
+            <legend>Favorite Genres:</legend>
+            <!-- <fieldset> groups related inputs -->
+            <!-- <legend> is the title of the group -->
+
+            <input type="checkbox" id="genre-fiction" name="genres" value="fiction">
+            <label for="genre-fiction">Fiction</label><br>
+            <!-- Checkboxes allow multiple selections -->
+
+            <input type="checkbox" id="genre-mystery" name="genres" value="mystery">
+            <label for="genre-mystery">Mystery</label><br>
+
+            <input type="checkbox" id="genre-scifi" name="genres" value="sci-fi">
+            <label for="genre-scifi">Sci-Fi</label><br>
+
+            <input type="checkbox" id="genre-nonfiction" name="genres" value="non-fiction">
+            <label for="genre-nonfiction">Non-Fiction</label><br>
+
+            <input type="checkbox" id="genre-other" name="genres" value="other">
+            <label for="genre-other">Others</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>How often do you read?</legend>
+
+            <input type="radio" id="freq-daily" name="readingFrequency" value="daily">
+            <label for="freq-daily">Daily</label><br>
+
+            <input type="radio" id="freq-weekly" name="readingFrequency" value="weekly">
+            <label for="freq-weekly">Weekly</label><br>
+
+            <input type="radio" id="freq-occasionally" name="readingFrequency" value="occasionally">
+            <label for="freq-occasionally">Occasionally</label><br>
+            <!-- Radio buttons allow only one choice per group -->
+        </fieldset>
+
+        <p>
+            <label for="favAuthor">Favorite Author:</label><br>
+            <input type="text" id="favAuthor" name="favAuthor">
+        </p>
+
+        <p>
+            <label for="whyReading">Why do you love reading?</label><br>
+            <textarea id="whyReading" name="whyReading" rows="4" cols="50"></textarea>
+            <!-- <textarea> allows multiple lines of text -->
+        </p>
+
+        <button type="submit">Submit</button>
+        <!-- <button type="submit"> sends the form data -->
+    </form>
+
+</body>
+</html>
