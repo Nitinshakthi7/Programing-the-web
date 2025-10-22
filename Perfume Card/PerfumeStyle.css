@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: hsl(304, 61%, 90%);
@@ -70,6 +72,10 @@ body {
   color: hsl(228, 18%, 38%);
   text-decoration: line-through;
 }
+.product-quantity {
+  display: block;
+  margin-left: 10px;
+}
 .add-to-cart-btn {
   background-color: hsl(158, 36%, 37%);
   font-size: 15px;
@@ -98,17 +104,11 @@ body {
   gap: 10px;
   margin-bottom: 15px;
 }
-@media screen and (max-width: 480px){
-   .product-card {
-        flex-direction: column;
-        max-width: 90%;
-    }
+@media screen and (max-width: 1024px) {
+  .product-card {
+    flex-direction: column;
+    max-width: 90%;
+  }
 }
 
-@media screen and (max-width: 1024px) {
-   .product-card {
-        flex-direction: column;
-        max-width: 90%;
-    }
-}
 
