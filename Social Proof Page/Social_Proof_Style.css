@@ -19,7 +19,7 @@ body {
 }
 
 .text-section p {
-  color: #7b6a8e;
+  color: #7700ff;
   line-height: 1.5;
 }
 
@@ -94,3 +94,17 @@ body {
     margin-top: 40px;
   }
 }
+@media (max-width: 480px) {
+  .container { 
+    padding: 10px; 
+  }
+  .card { 
+    padding: 15px; 
+    font-size: 0.9rem; 
+  }
+  .rating { 
+    padding: 8px 12px; 
+    font-size: 0.95rem; 
+  }
+}
+
