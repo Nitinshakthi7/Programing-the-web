@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card Editor</title>
+    <link rel="stylesheet" href="profile-card-editor.css">
+</head>
+<body>
+    <div class="app-container">
+        <div id="profileCard" class="profile-card">
+            <img id="profileImage" src="The Ghost Of Sparta.png" alt="Profile Picture">
+            <h2 id="profileName">Kratos</h2>
+            <p id="profileTitle" class="profile-title">God of War</p>
+            <p id="profileDescription">Once a fierce Spartan warrior, Kratos was tricked by Ares into killing his own family. 
+            Now haunted by his past, he wields the Blades of Chaos to challenge gods and monsters alike.</p>
+        </div>
+        <div class="editor">
+            <h3>Edit Your Profile</h3>
+            <label for="nameInput">Name:</label>
+            <input type="text" id="nameInput" value="Kratos">
+            <label for="titleInput">Title:</label>
+            <input type="text" id="titleInput" value="God of War">
+            <label for="descriptionInput">Description:</label>
+            <textarea id="descriptionInput">Once a fierce Spartan warrior, Kratos was tricked by Ares into killing his own family.Now haunted by his past, he wields the Blades of Chaos to challenge gods and monsters alike.</textarea>
+            <label for="bgColorInput">Card Background Color:</label>
+            <input type="color" id="bgColorInput" value="#ffffff">
+        </div>
+    </div>
+    <script src="profile-card-editor.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Gallery</title>
+    <link rel="stylesheet" href="interactive-gallery.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Interactive Game Gallery</h1>
+        <div id="preview-area" class="preview-area">
+            <img id="preview-image" src="Images/GTA 6.jpg" alt="Enlarged view">
+            <p id="preview-caption">The official key art for Grand Theft Auto VI, featuring protagonists Lucia and Jason in a stylized, sunset-drenched Vice City setting.</p>
+            <button id="prev-btn" class="nav-btn">&lt; Prev</button>
+            <button id="next-btn" class="nav-btn">Next &gt;</button>
+        </div>
+        <div id="thumbnail-container" class="thumbnail-container">
+            <div class="thumbnail-item">
+                <img class="thumbnail" src="Images/GTA 6.jpg" data-caption="The official key art for Grand Theft Auto VI, featuring protagonists Lucia and Jason in a stylized, sunset-drenched Vice City setting." alt="Thumbnail of GTA 6">
+                <button class="remove-btn">❌</button>
+            </div>
+            <div class="thumbnail-item">
+                <img class="thumbnail" src="Images/RDR 2.jpg" data-caption="Arthur Morgan sits on horseback, overlooking a stunning, expansive wilderness with distant mountains and a faint rainbow in Red Dead Redemption 2." alt="Thumbnail of RDR 2">
+                <button class="remove-btn">❌</button>
+            </div>
+            <div class="thumbnail-item">
+                <img class="thumbnail" src="Images/God Of War.jpeg" data-caption="Kratos and Atreus stand together in a vast, icy landscape in God of War Ragnarök, with the World Serpent (Jörmungandr) visible in the distance." alt="Thumbnail of GOD OF WAR">
+                <button class="remove-btn">❌</button>
+            </div>
+            <div class="thumbnail-item">
+                <img class="thumbnail" src="Images/Resident Evil 3.jpg" data-caption="Jill Valentine prepares to face an approaching horde of zombies on the chaotic, neon-lit streets of Raccoon City in Resident Evil 3." alt="Thumbnail of Jill Valentine">
+                <button class="remove-btn">❌</button>
+            </div>
+            <div class="thumbnail-item">
+                <img class="thumbnail" src="Images/Black Myth Wukong.jpg" data-caption="The protagonist of Black Myth: Wukong stands holding his staff, gazing at enormous mythological figures looming in the misty background." alt="Thumbnail of Black Myth Wukong">
+                <button class="remove-btn">❌</button>
+            </div>
+            <div class="thumbnail-item">
+                <img class="thumbnail" src="Images/Spider Man 2.jpg" data-caption="Peter Parker and Miles Morales stand side-by-side as Spider-Man, overlooking the New York City skyline at sunset in Marvel's Spider-Man 2." alt="Thumbnail of Spider Man 2">
+                <button class="remove-btn">❌</button>
+            </div>                                    
+        </div>
+    </div>
+    <script src="interactive-gallery.js"></script>
+</body>
+</html>

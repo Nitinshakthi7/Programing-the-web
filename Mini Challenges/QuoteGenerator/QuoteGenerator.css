@@ -1,0 +1,46 @@
+.quote-container {
+    margin-top: 50px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fafafa;
+    width: 90%; /* Ensure it doesn't get too narrow on small screens */
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.quote-author {
+    font-size: 14px;
+    font-style: italic;
+}
+
+#new-quote-button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+#new-quote-button:hover {
+    background-color: #333;
+    color: #fff;
+}   
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px; /* More responsive padding for all screen sizes */
+}
+
+h1 {
+    color: #333;
+}
