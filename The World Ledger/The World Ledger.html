@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World Ledger</title>
+    <link rel="stylesheet" href="The World Ledger.css">
+</head>
+<body>
+ <main>
+ <header class="header">
+    <div class="header-content">
+        <h1>📒The World Ledger - A Record of Every Nation</h1>
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+            <span id="mode-icon" class="moon-icon">🌙</span>
+            <span id="mode-text">Dark Mode</span>
+        </button>
+    </div>
+ </header>
+    <div id="home-page">
+        <div class="controls">
+            <div class="search-box">
+                <span class="search-icon"></span>
+                <input type="text" id="search-input" placeholder="Search for a country🔎..." onkeyup="handleSearch()">
+                <button class="clear-button" id="clear-button" onclick="clearSearch()">✖</button>
+            </div>
+            <select class="region-filter" id="region-filter" onchange="handleRegionChange()">
+                <option value="">Filter by Region</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+        <p id="loading" class="loading">Connecting to the satellite...</p>
+        <div id="countries-grid" class="countries-grid"></div>
+    </div>
+    <div id="detail-page" class="detail-page" style="display: none;">
+        <button class="back-button" onclick="goBack()">← Back</button>
+        <div class="detail-content">
+            <div class="detail-flag">
+                    <img id="detail-flag-img" src="" alt="">
+            </div>
+            <div class="detail-info">
+                <h2 id="detail-name"></h2>
+                <div class="detail-columns">
+                    <div class="detail-column">
+                        <p><strong>Native Name:</strong> <span id="detail-native-name"></span></p>
+                        <p><strong>Population:</strong> <span id="detail-population"></span></p>
+                        <p><strong>Region:</strong> <span id="detail-region"></span></p>
+                        <p><strong>Sub Region:</strong> <span id="detail-subregion"></span></p>
+                        <p><strong>Capital:</strong> <span id="detail-capital"></span></p>
+                    </div>
+                    <div class="detail-column">
+                        <p><strong>Top Level Domain:</strong> <span id="detail-tld"></span></p>
+                        <p><strong>Currencies:</strong> <span id="detail-currencies"></span></p>
+                        <p><strong>Languages:</strong> <span id="detail-languages"></span></p>
+                    </div>
+                </div>
+                <div id="border-countries-container" class="border-countries" style="display: none;">
+                    <strong>Border Countries:</strong>
+                    <div id="border-buttons" class="border-buttons"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </main>
+    <script src="The World Ledger.js"></script>
+</body>
+</html>
